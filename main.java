@@ -4,7 +4,7 @@ class Student{
  
  String id; 
  String name; 
- List<Integer> gradez; 
+ List<Double> gradez; 
  String pass = "unknown"; 
  boolean honor; 
  
@@ -14,16 +14,16 @@ class Student{
      gradez = new ArrayList<>(); 
  } 
  
- public void AddG(Object g){  
+ public void addG(Double g){  
      gradez.add(g); 
  } 
  
  public double average(){ 
      double total = 0; 
-     for(Object g : gradez){ 
+     for(Double g : gradez){ 
          total += g; // ClassCastException 
      } 
-     return total / 0; 
+     return total / gradez.size() ; 
  } 
  
  public void checkHonorStatus(){ 
