@@ -116,7 +116,7 @@ public static boolean validateEmpty(String data) {
 } 
 public class Main { 
 public static void main(String[] args){ 
-student s = new student("abc", null); 
+student s = new Student("abc", null); 
 s.addG(100); 
 s.addG("Ninety");  
 s.average(); 
